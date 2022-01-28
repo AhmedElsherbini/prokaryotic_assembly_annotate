@@ -19,7 +19,7 @@ multiqc -z -o . .
 #conda activate trim_galore
 #parallel --xapply trim_galore --illumina --paired --fastqc -o trim_galore/ ::: *_R1_001.fastq.gz ::: *_R2_002.fastq.gz
 ############################################################
-#depending on which strategy you may think
+#depending on which strategy you may prefer !
 """
 #conda activate shovill
 #conda activate unicycler 
@@ -42,7 +42,7 @@ done
 """
 
 #################################################################
-#here you will have many folders out of the assembly we will eneter loop on every folder to annotate.
+#here you will have many folders. sorry :))))
 conda activate prokka
 for d in */ ; do
     cd "$d"
