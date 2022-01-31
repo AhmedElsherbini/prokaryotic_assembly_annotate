@@ -1,2 +1,2 @@
 # prokaryotic_assembly_annotate
-For bacterial genomes assembly and annotate
+For bacterial genomes assembly and annotation
