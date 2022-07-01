@@ -32,7 +32,7 @@ do
 #f = what is before _R1_001.fastq.gz
 
 f=$(echo $file | sed -E "s/\_R1_001.fastq.gz*//");
-#I work on HPC
+#I work on HPC so I use what I used of memory
 shovill --cpus 32 --ram 128 --trim -outdir "$f" --R1 "$f"_R1_001.fastq.gz --R2 "$f"_R2_001.fastq.gz
 
 #Unicycler has also its own advantges. right?
