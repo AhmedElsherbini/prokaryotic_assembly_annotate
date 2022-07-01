@@ -32,8 +32,8 @@ do
 #f = what is before _R1_001.fastq.gz
 
 f=$(echo $file | sed -E "s/\_R1_001.fastq.gz*//");
-
-shovill  --trim -outdir "$f" --R1 "$f"_R1_001.fastq.gz --R2 "$f"_R2_001.fastq.gz
+#I work on HPC
+shovill --cpus 32 --ram 128 --trim -outdir "$f" --R1 "$f"_R1_001.fastq.gz --R2 "$f"_R2_001.fastq.gz
 
 #Unicycler has also its own advantges. right?
 #unicycler -t 12 -o "$f" --keep 2 --short1 "$f"_R1_001.fastq.gz --R2--short2 "$f"_R2_001.fastq.gz
